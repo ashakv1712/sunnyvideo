@@ -200,7 +200,7 @@ export default function Messages() {
           <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-12 text-center shadow-2xl">
             <div className="text-6xl mb-4">📭</div>
             <h2 className="text-2xl font-bold text-white mb-2">No Messages</h2>
-            <p className="text-white/80">You haven't received any video messages yet.</p>
+            <p className="text-white/80">You haven&apos;t received any video messages yet.</p>
           </div>
         ) : (
           <div className="grid gap-4">
