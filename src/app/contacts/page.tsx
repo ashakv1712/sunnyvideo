@@ -30,7 +30,7 @@ export default function Contacts() {
   useEffect(() => {
     loadCurrentUser()
     loadContacts()
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const loadCurrentUser = async () => {
     try {
@@ -232,7 +232,7 @@ export default function Contacts() {
 
           {searchQuery && searchResults.length === 0 && !searching && (
             <div className="mt-4 text-center text-white/60">
-              No users found matching "{searchQuery}"
+              No users found matching &quot;{searchQuery}&quot;
             </div>
           )}
         </div>

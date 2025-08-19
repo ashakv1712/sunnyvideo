@@ -18,7 +18,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     checkUser()
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const checkUser = async () => {
     try {

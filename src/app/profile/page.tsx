@@ -29,7 +29,7 @@ export default function Profile() {
   useEffect(() => {
     loadProfile()
     loadStats()
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const loadProfile = async () => {
     try {

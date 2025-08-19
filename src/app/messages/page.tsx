@@ -28,7 +28,7 @@ export default function Messages() {
 
   useEffect(() => {
     loadMessages()
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const loadMessages = async () => {
     try {
